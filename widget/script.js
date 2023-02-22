@@ -46,7 +46,7 @@ define(['jquery', 'lib/components/base/modal'], function ($, Modal) {
             $('#allprod').trigger('button:load:start');
             $.ajax({
               // в my_secret= укажите свое значение такое же как в /amocrm/config.php - $my_secret, чтобы закрыть доступ посторонним 
-              url: 'https://yourwebsite.ru/amocrm/ipdata.php?lead_id=' + AMOCRM.constant('card_id') + '&my_secret=uirhgtrghjhbvtrgvbbv7494nce',
+              url: 'https://amo-test.vercel.app/amocrm/ipdata.php?lead_id=' + AMOCRM.constant('card_id') + '&my_secret=uirhgtrghjhbvtrgvbbv7494nce',
               type: 'GET',
               success: function (data) {
                 self.getModal(data);
